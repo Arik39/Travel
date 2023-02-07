@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel/src/ui/components/CustomSectionHeading.dart';
 import 'package:travel/src/ui/components/tiles/MediumTile.dart';
+import 'package:travel/src/ui/constants.dart';
 
 class PopularPackageSection extends StatelessWidget {
   const PopularPackageSection({
@@ -18,24 +19,30 @@ class PopularPackageSection extends StatelessWidget {
             height: 20,
           ),
           MediumTile(
-            image: "assets/images/kutabeachresort.png",
-            resortName: "Kuta Resort",
-            price: "20,000",
-            rating: 4,
-            ratingText: "4,8",
-            description:
-                "A resort is a place used for vacation, relaxation or as a day...",
-            isFav: false,
+            locationName: Kuta.loationName,
+            placeName: Kuta.placeName,
+            isFav: Kuta.isFav,
+            rating: Kuta.rating,
+            ratingText: Kuta.ratingText,
+            image: Kuta.resortImage,
+            fullImage: Kuta.fullImage,
+            longDescription: location.longDescription,
+            price: Kuta.price,
+            resortName: Kuta.resortName,
+            description: location.description,
           ),
           MediumTile(
-            image: "assets/images/bagabeachresort.png",
-            resortName: "Baga Beach Resort",
-            price: "15,000",
-            rating: 4,
-            ratingText: "4,8",
-            description:
-                "A resort is a place used for vacation, relaxation or as a day...",
-            isFav: false,
+            locationName: Baga.loationName,
+            placeName: Baga.placeName,
+            isFav: Baga.isFav,
+            rating: Baga.rating,
+            ratingText: Baga.ratingText,
+            image: Baga.resortImage,
+            fullImage: Baga.fullImage,
+            longDescription: location.longDescription,
+            price: Baga.price,
+            description: location.description,
+            resortName: Baga.resortName,
           ),
         ],
       ),

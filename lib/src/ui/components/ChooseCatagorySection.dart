@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel/src/ui/components/CustomSectionHeading.dart';
 import 'package:travel/src/ui/components/tiles/CategoryTile.dart';
 import 'package:travel/src/ui/components/tiles/LargeTile.dart';
+import 'package:travel/src/ui/constants.dart';
 
 class ChooseCatagorySection extends StatelessWidget {
   const ChooseCatagorySection({
@@ -51,30 +52,28 @@ class ChooseCatagorySection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   LargeTile(
-                      locationName: 'Bali, Indonesia',
-                      placeName: "Kuta Beach",
-                      isFav: true,
-                      rating: 4,
-                      ratingText: "4,2",
-                      image: "assets/images/kutabeach.png",
-                      fullImage: "assets/images/kutabeachfull.png",
-                      longDescription:
-                          "One of the most happening beaches in Goa, Baga Beach is where you will find water sports, fine dining restaurants, bars, and clubs. Situated in North Goa, Baga Beach is bordered by Calangute and Anjuna Beaches.",
-                      price: "20,000"),
+                      locationName: Kuta.loationName,
+                      placeName: Kuta.placeName,
+                      isFav: Kuta.isFav,
+                      rating: Kuta.rating,
+                      ratingText: Kuta.ratingText,
+                      image: Kuta.image,
+                      fullImage: Kuta.fullImage,
+                      longDescription: location.longDescription,
+                      price: Kuta.price),
                   SizedBox(
                     width: 20,
                   ),
                   LargeTile(
-                    locationName: 'Goa , India',
-                    placeName: "Baga Beach",
-                    isFav: false,
-                    rating: 4,
-                    ratingText: "4,8",
-                    image: "assets/images/bagabeach.png",
-                    fullImage: "assets/images/bagabeachfull.png",
-                    longDescription:
-                        "One of the most happening beaches in Goa, Baga Beach is where you will find water sports, fine dining restaurants, bars, and clubs. Situated in North Goa, Baga Beach is bordered by Calangute and Anjuna Beaches.",
-                    price: '15,000',
+                    locationName: Baga.loationName,
+                    placeName: Baga.placeName,
+                    isFav: Baga.isFav,
+                    rating: Baga.rating,
+                    ratingText: Baga.ratingText,
+                    image: Baga.image,
+                    fullImage: Baga.fullImage,
+                    longDescription: location.longDescription,
+                    price: Baga.price,
                   ),
                 ],
               ),
